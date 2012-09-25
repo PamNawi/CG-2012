@@ -13,12 +13,12 @@ int main(){
         objetoGrafico* og;
         og = &objetosGraficos[i];
         printf("%d;%c;", og->id, og->tipo);
-        for(k=0;k<numParametros(og->tipo);k++){
+        for(k=0;k<numParametros(og->tipo);k++){ 
             printf("%f;", og->valores[k]);
         }
         printf("\n");
     }
-    
+    getc(stdin);
     return 0;
     
 }
